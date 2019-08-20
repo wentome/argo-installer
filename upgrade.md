@@ -25,5 +25,7 @@
 #### 1. 在线升级  
 `$ upgrader -mi`     自动升级到最新版本 n.n.nxxx
 #### 2. 离线升级  
-`$ upgrader -mi -l argomi.x.x.x.tar.gz`
+`$ upgrader -mi -l argomi.x.x.x.tar.gz`  
+## 一些规则
+1. 日志文件 /tmp/upgrate.log
 
