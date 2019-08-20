@@ -27,5 +27,5 @@
 #### 2. 离线升级  
 `$ upgrader -mi -l argomi.x.x.x.tar.gz`  
 ## 一些规则
-1. 日志文件 /tmp/upgrate.log
+1. 日志文件 /tmp/upgrade.log
 
