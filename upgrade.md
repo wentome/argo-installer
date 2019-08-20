@@ -12,7 +12,7 @@
     1. 进如工作目录 `$ cd go`
     1. 测试 `$ bin/python3 tools/pre.py -t -c ../sys.conf`  结果为 pass 方可继续操作
     1. 构建 argo 用户 `$ bin/python3 tools/pre.py -u argo -c ../sys.conf`
-1. 离线升级需要提前下载相应的升级包
+1. 如果使用离线升级需要提前下载相应的升级包
     1. 下载大版本升级包 `$ wget http://arkinstall.analysys.cn/upgrade/ma/argoma.n.n.n.tar.gz`
     1. 下载小版本升级包 `$ wget http://arkinstall.analysys.cn/upgrade/mi/argomi.n.n.nxxx.tar.gz`
 1. 升级操作需要切换到 argo 用户操作 (`$ su - argo`)
