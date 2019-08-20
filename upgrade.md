@@ -1,2 +1,20 @@
-## upgrader
+# upgrade
+
+## 系统升级
+  * 系统升级包含大版本、小版本两种升级
+  * 大版本升级主要做架构调整，新功能发布
+  * 小版本升级主要做 bug 修复，系统参数调整
+## 升级前准备
+   4.3.5 以前的版本升级前需要创建 argo 用户。
+   升级操作需要切换到 argo 用户操作 ($ su - argo)
+## 大版本升级
+  1. 在线升级
+    $ upgrader -ma 
+  2. 离线升级
+    $ upgrader -ma -l argoma.x.x.x.tar.gz
+## 小版本升级
+  1. 在线升级
+   $ upgrader -mi
+  2. 离线升级
+   $ upgrader -mi -l argomi.x.x.x.tar.gz
 
