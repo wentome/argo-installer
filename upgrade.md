@@ -4,8 +4,16 @@
   * 小版本升级主要做 bug 修复，系统参数调整
 ## 升级前准备
 1. 低于 4.3.5 版本需要创建 argo 用户
-2. 离线升级需要提前下载升级包
-2. 升级操作需要切换到 argo 用户操作 (`$ su - argo`)
+    1. 使用 root 操作
+    1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
+    1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar xzf go.tar.gz` 
+    1. 拷贝配置文件到当前目录  `$ cp go/files/scatter/sys.conf .` 
+    1. 修改配置参数 (IP:内网IP PORT：ssh 端口 USER：ROOT PASSWD : ROOT 用户的密码) `$ vim sys.conf`
+    1. 进如工作目录 `$ cp go`
+    1. 测试 `$ bin/python3 tools/pre.py -t -c ../sys.conf`  结果为 pass 方可继续操作
+    1. 构建 argo 用户 `$ bin/python3 tools/pre.py -u argo -c ../sys.conf`
+1. 离线升级需要提前下载升级包
+1. 升级操作需要切换到 argo 用户操作 (`$ su - argo`)
 ## 大版本升级
 #### 1. 在线升级  
 `$ upgrader -ma`    自动升级到最新版本 n.n.x000
