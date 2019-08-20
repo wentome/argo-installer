@@ -8,7 +8,7 @@
     1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
     1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar xzf go.tar.gz` 
     1. 拷贝配置文件到当前目录  `$ cp go/files/scatter/sys.conf .` 
-    1. 修改配置参数 (IP:内网IP  PORT:ssh 端口  USER:ROOT  PASSWD:ROOT 用户的密码) `$ vim sys.conf`
+    1. 修改配置参数 (IP:内网IP | PORT:ssh 端口 | USER:ROOT | PASSWD:root 用户的密码) `$ vim sys.conf`
     1. 进如工作目录 `$ cp go`
     1. 测试 `$ bin/python3 tools/pre.py -t -c ../sys.conf`  结果为 pass 方可继续操作
     1. 构建 argo 用户 `$ bin/python3 tools/pre.py -u argo -c ../sys.conf`
