@@ -21,14 +21,14 @@
 #### 1. 在线升级  
 `$ upgrader -ma`    自动升级到最新版本 n.n.x000
 #### 2. 离线升级  
-`$ upgrader -ma -l argoma.x.x.x.tar.gz`
+`$ upgrader -ma -l /tmp/argoma.x.x.x.tar.gz`  升级包绝对路径  
 #### 　校验
 登录 ambrari 管理界面查看服务状态
 ## 小版本升级
 #### 1. 在线升级  
 `$ upgrader -mi`     自动升级到最新版本 n.n.nxxx
 #### 2. 离线升级  
-`$ upgrader -mi -l argomi.x.x.x.tar.gz`  
+`$ upgrader -mi -l /tmp/argomi.x.x.x.tar.gz`  升级包绝对路径 
 ## 一些规则
 1. 日志文件 /tmp/upgrade.log
 ## 问题汇总
