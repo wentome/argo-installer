@@ -22,6 +22,8 @@
 `$ upgrader -ma`    自动升级到最新版本 n.n.x000
 #### 2. 离线升级  
 `$ upgrader -ma -l argoma.x.x.x.tar.gz`
+#### 校验
+登录 ambrari 管理界面查看服务状态
 ## 小版本升级
 #### 1. 在线升级  
 `$ upgrader -mi`     自动升级到最新版本 n.n.nxxx
@@ -30,4 +32,7 @@
 ## 一些规则
 1. 日志文件 /tmp/upgrade.log
 ## 问题汇总
+1. 部分版本升级到 4.3.4 会有 redis 启动失败的情况，解决办法 
+  方法一. 手动kill redis-server 进程然后在ambari 中启动redis 
+  方法二. `$ upgrader -mi -v argomi.4.3.4001.tar.gz `
 
