@@ -1,5 +1,6 @@
 ## 系统升级
   * 系统升级包含大版本、小版本两种升级
+  * 目前仅 4.3.1 及以上的版本支持版本升级  
   * 大版本升级主要做架构调整，新功能发布。 如 4.3.1 升级到 4.3.4
   * 小版本升级主要做 bug 修复，系统参数调整。 如 4.3.4009 升级到 4.3.4012
 ## 升级前准备
@@ -21,6 +22,8 @@
 `$ upgrader -ma`    自动升级到最新版本 n.n.x000
 #### 2. 离线升级  
 `$ upgrader -ma -l argoma.x.x.x.tar.gz`
+#### 　校验
+登录 ambrari 管理界面查看服务状态
 ## 小版本升级
 #### 1. 在线升级  
 `$ upgrader -mi`     自动升级到最新版本 n.n.nxxx
@@ -28,4 +31,9 @@
 `$ upgrader -mi -l argomi.x.x.x.tar.gz`  
 ## 一些规则
 1. 日志文件 /tmp/upgrade.log
+## 问题汇总
+1. 部分版本大版本升级到 4.3.4 会有 redis 启动失败的情况，解决办法   
+  方法一：手动 kill redis 进程 `$ ps -ef | grep redis-server | grep src | awk '{ print $2}' | xargs sudo kill -9`  
+  　　　　然后登录 ambari 启动 redis   
+  方法二：升级指定的小版本 `$ upgrader -mi -v argomi.4.3.4001.tar.gz `
 
