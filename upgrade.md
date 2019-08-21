@@ -35,5 +35,5 @@
 1. 部分版本升级到 4.3.4 会有 redis 启动失败的情况，解决办法   
   方法一：手动 kill redis 进程 `$ ps -ef | grep redis-server | grep src | awk '{ print $2}' | xargs sudo kill -9`  
   　　　　然后登录　ambari 启动redis   
-  方法二： 升级指定的小版本 `$ upgrader -mi -v argomi.4.3.4001.tar.gz `
+  方法二：升级指定的小版本 `$ upgrader -mi -v argomi.4.3.4001.tar.gz `
 
