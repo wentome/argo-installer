@@ -9,6 +9,7 @@
 也希望能在很快的未来，我们会和更多的开发者和社区爱好者一起，带动更多的朋友一起来做这件有意义的事情。
 
 最新版：[4.3.4](http://arkinstall.analysys.cn/) 
+ * [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
 
 **What's New in 4.3.4**
  - 现在可以通过 API 查询包括人群、事件分析、留存分析、转化漏斗及元数据等数据了
@@ -65,7 +66,7 @@
 # 安装说明
 
 - [通过脚本安装](INSTALL_SCRIPT.md)（推荐！）
-- [通过 Docker 安装](INSTALL_DOCKER.md)
+- [通过 Docker 安装](INSTALL_DOCKER.md) **NOTE**: Docker 版仅用于体验，不支持更新，不应用于生产环境。
 
 ## 常见问题
 
