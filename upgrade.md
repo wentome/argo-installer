@@ -4,7 +4,7 @@
 * 大版本升级主要做架构调整，新功能发布。 如 4.3.1 升级到 4.3.4
 * 小版本升级主要做 bug 修复，系统参数调整。 如 4.3.4009 升级到 4.3.4012
 ## 升级前准备
-### 低于 4.3.5 版本需要创建 Argo 用户
+#### 低于 4.3.5 版本需要创建 Argo 用户
 1. 使用 root 操作
 1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
 1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar xzf go.tar.gz` 
@@ -13,10 +13,10 @@
 1. 进如工作目录 `$ cd go`
 1. 测试 `$ bin/python3 tools/pre.py -t -c ../sys.conf`  结果为 pass 方可继续操作
 1. 构建 Argo 用户 `$ bin/python3 tools/pre.py -u argo -c ../sys.conf`
-### 如果使用离线升级需要提前下载相应的升级包
+#### 如果使用离线升级需要提前下载相应的升级包
 1. 下载大版本升级包 `$ wget http://arkinstall.analysys.cn/upgrade/ma/argoma.n.n.n.tar.gz`
 1. 下载小版本升级包 `$ wget http://arkinstall.analysys.cn/upgrade/mi/argomi.n.n.nxxx.tar.gz`
-### 升级操作需要切换到 Argo 用户操作 (`$ su - argo`)
+#### 升级操作需要切换到 Argo 用户操作 (`$ su - argo`)
 ## 大版本升级
 #### 在线升级  
 `$ upgrader -ma`    自动升级到最新版本 n.n.x000
@@ -32,9 +32,10 @@
 ## 一些规则
 1. 日志文件 `/tmp/upgrade.log`
 ## 问题汇总
-部分版本大版本升级到 4.3.4 会有 redis 启动失败的情况，解决办法：
-### 方法一
+部分版本大版本升级到 4.3.4 会有 redis 启动失败的情况。
+解决办法：
+#### 方法一
 1. 手动 kill redis 进程 `$ ps -ef | grep redis-server | grep src | awk '{ print $2}' | xargs sudo kill -9`  
 1. 登录 ambari 启动 redis   
-### 方法二
+#### 方法二
 1. 升级指定的小版本 `$ upgrader -mi -v 4.3.4001`
