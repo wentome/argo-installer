@@ -46,7 +46,7 @@
 
 ### 2.1 准备工作
 
-以下操作以4.3.1版本为样例，有些操作中涉及到的文件需要根据您安装的具体的版本号来定
+请将命令行中`{version}`替换为实际安装时选择的版本号。
 
 * 创建目录
 
@@ -61,17 +61,17 @@
         ```
         yum install wget unzip -y
         cd /tmp
-        wget https://github.com/analysys/argo-installer/archive/4.3.1.zip
-        unzip 4.3.1.zip
-        cp argo-installer-4.3.1/config.properties /opt/soft/
-        cp argo-installer-4.3.1/standalone_remote_installer.sh /opt/soft/
-        cp argo-installer-4.3.1/init_ext4.sh /opt/soft/
+        wget https://github.com/analysys/argo-installer/archive/{version}.zip
+        unzip {version}.zip
+        cp argo-installer-{version}/config.properties /opt/soft/
+        cp argo-installer-{version}/standalone_remote_installer.sh /opt/soft/
+        cp argo-installer-{version}/init_ext4.sh /opt/soft/
         ```
 
 * <span id="offline_install">离线安装</span> （_**在线自动安装，跳过该步骤**_）
     1. 下载安装包(百度网盘或Http）
     
-    2. 将 analysys_installer_base_centos7.tar.gz， analysys_installer_base_centos7.tar.gz.md5， argo_centos7_4.3.1.tar.gz，argo_centos7_4.3.1.tar.gz.md5 4个文件放到服务器/opt/soft目录下。
+    2. 将 analysys_installer_base_centos7.tar.gz， analysys_installer_base_centos7.tar.gz.md5， argo_centos7_{version}.tar.gz，argo_centos7_{version}.tar.gz.md5 4个文件放到服务器/opt/soft目录下。
     
     3. 下载这里的 argo-installer 项目，然后解压后将 config.properties 和standalone_offline_installer.sh，init_ext4.sh 文件放到服务器 /opt/soft/ 目录下
     
@@ -103,7 +103,8 @@
 
 #### 2.2.1 安装
 
-以下操作以4.3.1版本为样例
+请将命令行中`{version}`替换为实际安装时选择的版本号。
+
 1. 在线安装：配置服务器下载地址，修改/opt/soft/config.properties文件
     ```bash
     repo_url=http://arkinstall.analysys.cn/
@@ -131,7 +132,7 @@
     请输入需要内网IP对应的网卡名称，默认 [eth0]: 
     请输入您接下来的动作: install/upgrade. 默认[install]: 
     请输入mysql的密码.默认[Eguan@123] ：
-    请输入argo的版本号，默认 [4.3.1]: 
+    请输入argo的版本号，默认 [{version}]: 
     请输入linux系统root用户的密码： rrFG37Ui987
     请再次输入linux系统root密码：rrFG37Ui987
     请输入集群名称，默认 [platformName]: 
