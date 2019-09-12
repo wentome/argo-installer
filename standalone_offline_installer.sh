@@ -154,6 +154,7 @@ function install()
 
 }
 
+yum install net-tools -y
 
 ##提示信息
 echo -e "${c_yellow}为了顺利安装，我们将收集一些信息。请您仔细填写。${c_end}"
