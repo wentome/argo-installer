@@ -17,7 +17,10 @@
 1. 下载大版本升级包 `$ wget http://arkinstall.analysys.cn/upgrade/ma/argoma.n.n.n.tar.gz`
 1. 下载小版本升级包 `$ wget http://arkinstall.analysys.cn/upgrade/mi/argomi.n.n.nxxx.tar.gz`
 #### 升级操作需要切换到 Argo 用户操作 (`$ su - argo`)
+## 升级信息查看
+`$ upgrader`    查看远程升级信息  如果离线升级访问 http://ark_install.analysys.cn/version/ 查看升级信息
 ## 大版本升级
+#### 目前一键升服务还在优化调整阶段，大版本升级前先做小版本升级 用于更新相关升级程序
 #### 在线升级  
 `$ upgrader -ma`    自动升级到最新版本 n.n.x000
 #### 离线升级  
@@ -29,6 +32,11 @@
 `$ upgrader -mi`     自动升级到最新版本 n.n.nxxx
 #### 离线升级  
 `$ upgrader -mi -l /tmp/argomi.x.x.x.tar.gz`  升级包绝对路径 
+## 升级命令相关参数
+1. -pa  + passwd  提示密码错误时 用于指定 ambari 密码  
+1. -pm  + passwd 提示密码错误时 用于指定 mysql 密码
+1. -d  高级操作需了解升级原理 系统升级过程会记录升级进度 , 如果出错会可以用 debug 高级模式 续上一次升级未成功的步骤 修改进度文件控制升级流程 
+1. -f  高级操作需了解升级原理 强制升级 删掉进度文件 重新开始升级
 ## 一些规则
 1. 日志文件 `/tmp/upgrade.log`
 ## 问题汇总
