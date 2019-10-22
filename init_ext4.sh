@@ -166,7 +166,7 @@ sysctl -p
 #格盘挂载
 echo -e "\033[1;33m 准备开始格盘和挂载 \033[0m";
 
-sed -i '/data/d' /etc/fstab;
+#sed -i '/data/d' /etc/fstab;
 
 for disk_name in ${disk_list};
 
