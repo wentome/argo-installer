@@ -17,7 +17,7 @@ Argo为私有化部署产品，需要工程师参与。所以请业务同学将�
 
 **升级**
 
-[升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
+- [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
 
 **What's New in 4.5**
 
@@ -43,13 +43,13 @@ Argo为私有化部署产品，需要工程师参与。所以请业务同学将�
 
 #### License 
 
-安装完成后需如下license激活
+安装完成后需如下license激活，该license专为Argo用户提供
 > D4833F05A784C925D17684A8A2114EFB8E1A431CCE5929B85F097A783BED24F247D07B1DD63414348BE4FB516DB18FD65A4167FCAE311022E71A223AE672ABEF10F721D949A6FECEA7272B1C3D0900FF33366F7AA30E5546818FD2521530F266287C891F802C5657C8742787919ACE2F7376D5D781C57509E5CBE4D12CCF254D46F32A84D0E887DA4DA5BF91F430F251
 
 License 有效期为1个自然年，每年12月更新次年 License。用企业管理员账号登录平台，在企业概览页面的右上角点击“续期/扩容”，填入上面的 License 即可完成续期。
 
 
-## 为什么你需要 Argo ？
+# 为什么你需要 Argo ？
 
 目前能做用户行为数据收集和分析的产品很多，有的例如 Google Analytics、百度统计和友盟能基础数据统计和分析（当然 GA 能做更多事情只不过也需要更多的学习成本）。使用这类工具可以满足你了解产品数据表现的基本需求，可当你需要数据做更多事情时他们就无法满足了。常见的场景有：
 
@@ -66,12 +66,12 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 来自用户的数据是未来企业日常工作中会用到的基本元素，我们希望能帮助团队做到“**早收集，自己存，存明细，分析快，导出易**”。我们会致力于提供更开放、更低门槛、更易用的数据工具，希望能通过我们的努力让这种数据的使用能力成为团队初创伊始就具备的能力。如果你现在还在考虑用户行为相关的数据产品，可以先花几分钟部署 Argo 试一下。相信会给你的决策提供帮助。
 
 
-## 他们已经在用
+# 他们已经在用
 
 ![](imgs/customers.png)
 
 
-## Argo 提供的功能
+# Argo 提供的功能
 
 ### 分析类
 
@@ -100,7 +100,7 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 * [广告活动管理](https://docs.analysys.cn/ark/features/operation/utm)（UTM、APP扫码）
 
 
-## 常见问题
+# 常见问题
 
 部署中遇到问题可以看这里：
 
@@ -114,10 +114,21 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 - [其它问题](https://ark.analysys.cn/docs/faq.html)
 
 
-## 提交反馈
+# 提交反馈
 
 * 提交[新功能需求](https://github.com/analysys/argo-installer/issues/new)
 * 为[热门需求](https://github.com/analysys/argo-installer/issues?q=is%3Aopen+is%3Aissue+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc)投票
+
+
+# 社区支持
+
+希望我们的努力可以解放更多人的生产力，祝你使用顺利！
+
+官方论坛：
+https://geek.analysys.cn
+
+微信群交流：
+如有问题，请优先根据文档和论坛问答自研，若想进群交流请发送邮件至zhunan@analysys.com.cn ，邮件标题中注明你的微信号和进群目的。
 
 
 # 热切地寻找志同道合的小伙伴
@@ -137,13 +148,4 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 期待与你共建用户行为分析以及基于用户行为驱动更多业务的社区！
 
 
-# 社区支持
-
-希望我们的努力可以解放更多人的生产力，祝你使用顺利！
-
-官方论坛：
-https://geek.analysys.cn
-
-微信群交流：
-如有问题，请优先根据文档和论坛问答自研，若想进群交流请发送邮件至zhunan@analysys.com.cn ，邮件标题中注明你的微信号和进群目的。
 
