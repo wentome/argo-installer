@@ -8,10 +8,16 @@
 
 Argo为私有化部署产品，需要工程师参与。所以请业务同学将地址同步给工程师，助你快速上手！
 
-**最新版下载地址**：
+# 安装及升级说明
 
-[4.5.1](http://arkinstall.analysys.cn/) 
- * [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
+**安装**
+- [通过脚本安装](INSTALL_SCRIPT.md)（推荐！）
+  *最新版地址➡️ [4.5.1](http://arkinstall.analysys.cn/) 
+- [通过 Docker 安装](INSTALL_DOCKER.md) **NOTE**: Docker 版仅用于体验，不支持更新，不应用于生产环境；cpu需要支持SSE4.2指令集
+
+**升级**
+
+[升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
 
 **What's New in 4.5**
 
@@ -34,6 +40,14 @@ Argo为私有化部署产品，需要工程师参与。所以请业务同学将�
  - 新增分群管理API
  
 更多更新内容在[这里](https://docs.analysys.cn/ark/release-notes)查看
+
+#### License 
+
+安装完成后需如下license激活
+> D4833F05A784C925D17684A8A2114EFB8E1A431CCE5929B85F097A783BED24F247D07B1DD63414348BE4FB516DB18FD65A4167FCAE311022E71A223AE672ABEF10F721D949A6FECEA7272B1C3D0900FF33366F7AA30E5546818FD2521530F266287C891F802C5657C8742787919ACE2F7376D5D781C57509E5CBE4D12CCF254D46F32A84D0E887DA4DA5BF91F430F251
+
+License 有效期为1个自然年，每年12月更新次年 License。用企业管理员账号登录平台，在企业概览页面的右上角点击“续期/扩容”，填入上面的 License 即可完成续期。
+
 
 ## 为什么你需要 Argo ？
 
@@ -83,23 +97,6 @@ Argo为私有化部署产品，需要工程师参与。所以请业务同学将�
 * [发送短息](https://docs.analysys.cn/ark/features/operation/sms)（腾讯云短信、云集、领驭、乐信通）
 * [广告活动管理](https://docs.analysys.cn/ark/features/operation/utm)（UTM、APP扫码）
 
-# 安装及升级说明
-
-**安装**
-- [通过脚本安装](INSTALL_SCRIPT.md)（推荐！）
-  *最新版地址➡️ [4.5.1](http://arkinstall.analysys.cn/) 
-- [通过 Docker 安装](INSTALL_DOCKER.md) **NOTE**: Docker 版仅用于体验，不支持更新，不应用于生产环境；cpu需要支持SSE4.2指令集
-
-**升级**
-
-[升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
-
-#### License 
-
-安装完成后需如下license激活
-> D4833F05A784C925D17684A8A2114EFB8E1A431CCE5929B85F097A783BED24F247D07B1DD63414348BE4FB516DB18FD65A4167FCAE311022E71A223AE672ABEF10F721D949A6FECEA7272B1C3D0900FF33366F7AA30E5546818FD2521530F266287C891F802C5657C8742787919ACE2F7376D5D781C57509E5CBE4D12CCF254D46F32A84D0E887DA4DA5BF91F430F251
-
-License 有效期为1个自然年，每年12月更新次年 License。用企业管理员账号登录平台，在企业概览页面的右上角点击“续期/扩容”，填入上面的 License 即可完成续期。
 
 ## 常见问题
 
