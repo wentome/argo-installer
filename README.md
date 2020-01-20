@@ -65,9 +65,11 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 
 来自用户的数据是未来企业日常工作中会用到的基本元素，我们希望能帮助团队做到“**早收集，自己存，存明细，分析快，导出易**”。我们会致力于提供更开放、更低门槛、更易用的数据工具，希望能通过我们的努力让这种数据的使用能力成为团队初创伊始就具备的能力。如果你现在还在考虑用户行为相关的数据产品，可以先花几分钟部署 Argo 试一下。相信会给你的决策提供帮助。
 
+
 ## 他们已经在用
 
 ![](imgs/customers.png)
+
 
 ## Argo 提供的功能
 
@@ -111,10 +113,12 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 - [功能介绍](https://ark.analysys.cn/docs/function.html)
 - [其它问题](https://ark.analysys.cn/docs/faq.html)
 
+
 ## 提交反馈
 
 * 提交[新功能需求](https://github.com/analysys/argo-installer/issues/new)
 * 为[热门需求](https://github.com/analysys/argo-installer/issues?q=is%3Aopen+is%3Aissue+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc)投票
+
 
 # 热切地寻找志同道合的小伙伴
 
@@ -131,6 +135,7 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 有想法的小伙伴可以给 zhangxiaoliang@analysys.com.cn 发送邮件，或者通过任何方式联系到 Argo 同学，并注明来意。
 
 期待与你共建用户行为分析以及基于用户行为驱动更多业务的社区！
+
 
 # 社区支持
 
