@@ -8,7 +8,7 @@
 
 也希望能在很快的未来，我们会和更多的开发者和社区爱好者一起，带动更多的朋友一起来做这件有意义的事情。
 
-最新版：[4.5.1](http://arkinstall.analysys.cn/) 
+最新版下载地址：[4.5.1](http://arkinstall.analysys.cn/) 
  * [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
 
 **What's New in 4.5**
@@ -132,6 +132,7 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 
 官方论坛：
 https://geek.analysys.cn
+
 微信群交流：
 如有问题，请优先根据文档和论坛问答自研，若想进群交流请发送邮件至zhunan@analysys.com.cn ，邮件标题中注明你的微信号和进群目的。
 
