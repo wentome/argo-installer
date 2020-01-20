@@ -8,7 +8,8 @@
 
 也希望能在很快的未来，我们会和更多的开发者和社区爱好者一起，带动更多的朋友一起来做这件有意义的事情。
 
-最新版下载地址：[4.5.1](http://arkinstall.analysys.cn/) 
+最新版下载地址：
+[4.5.1](http://arkinstall.analysys.cn/) 
  * [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
 
 **What's New in 4.5**
