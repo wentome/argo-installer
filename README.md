@@ -85,7 +85,7 @@
 # 安装说明
 
 - [通过脚本安装](INSTALL_SCRIPT.md)（推荐！）
-- [通过 Docker 安装](INSTALL_DOCKER.md) **NOTE**: Docker 版仅用于体验，不支持更新，不应用于生产环境。
+- [通过 Docker 安装](INSTALL_DOCKER.md) **NOTE**: Docker 版仅用于体验，不支持更新，不应用于生产环境；cpu需要支持SSE4.2指令集
 
 #### License 
 
