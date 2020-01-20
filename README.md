@@ -8,7 +8,7 @@
 
 Argo为私有化部署产品，需要工程师参与。所以请业务同学请将地址同步给工程师，助你快速上手！
 
-最新版下载地址（Argo为私有化部署产品，需要工程师参与业务同学请将地址同步给工程师）：
+最新版下载地址：
 
 [4.5.1](http://arkinstall.analysys.cn/) 
  * [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
