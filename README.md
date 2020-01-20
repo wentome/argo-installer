@@ -110,6 +110,8 @@ License 有效期为1个自然年，每年12月更新次年 License。用企业�
 * 提交[新功能需求](https://github.com/analysys/argo-installer/issues/new)
 * 为[热门需求](https://github.com/analysys/argo-installer/issues?q=is%3Aopen+is%3Aissue+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc)投票
 
+为了助你快速上手Argo，我们提供了Argo论坛（https://geek.analysys.cn/）和微信交流群。如有问题，请优先根据文档和论坛问答自研，若想进群交流请发送邮件至zhunan@analysys.com.cn  邮件标题中注明你的微信号和进群目的。
+
 # 热切地寻找志同道合的小伙伴
 
 正如你所见，我们希望通过易观 Argo 能让更多的早期团队也具备商业级用户行为驱动的能力。我们通过社区的方式来运营此版本，就是希望 Argo 能是社会的，而不是私有的。如果你认同我们的做法，并且也想贡献一份力量，无论你是否在易观，都有可以成为 Argo 社区的一员。
