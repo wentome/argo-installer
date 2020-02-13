@@ -13,7 +13,6 @@ Argo为私有化部署产品，需要工程师参与。所以请业务同学将�
 **安装**
 - [通过脚本安装](INSTALL_SCRIPT.md)（推荐！）
   *最新版地址➡️ [4.5.1](http://arkinstall.analysys.cn/) 
-- [通过 Docker 安装](INSTALL_DOCKER.md) **NOTE**: Docker 版仅用于体验，不支持更新，不应用于生产环境；cpu需要支持SSE4.2指令集
 
 **升级**
 
