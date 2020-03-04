@@ -1,12 +1,9 @@
 #!/bin/bash
 #############################
-#Version:20191022
+#Version:20191119
 #############################
-
 read_test=''
 write_test=''
-
-
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 source /etc/profile
 [ $(id -u) -gt 0 ] && echo "请用root用户执行此脚本！" && exit 1
@@ -18,7 +15,26 @@ PROGPATH=`echo $0 | sed -e 's,[\\/][^\\/][^\\/]*$,,'`
 LOGPATH="$PROGPATH/log"
 [ -e $LOGPATH ] || mkdir $LOGPATH
 RESULTFILE="$LOGPATH/HostCheck-`hostname`-`date +%Y%m%d`.txt"
-
+#判断CPU是否符合要求
+memory=`free -m | egrep Mem | awk '{printf("%.0f\n",$2/1024)}'`
+cpuxian=`grep "processor" /proc/cpuinfo | wc -l`
+function error_info(){
+    echo -e "\033[1;32m*******************************************************服务器兼容问题*******************************************************\033[0m"
+if [ ${cpuxian} -lt 16 -o ${memory} -lt 30 ];then
+        echo -e "\033[1;31m cpu线程数不符合方舟安装要求,最低要求cpu线程数16，内存最低要求32g,当前为${cpuxian},当前内存是${memory}g \033[0m";
+fi
+if [ `lscpu|grep Flags|grep sse4_2 |wc -l` == 0  ];then
+	echo -e "\033[1;31m cpu不支持sse4.2指令集，无法支持kudu \033[0m";
+fi
+for i in 25 465 587
+do
+	nc -zv smtp.analysys.com.cn $i || echo -e "\033[1;31m 对外请求邮件端口 $i 无法连通。\033[0m";
+done
+if [ `umask` -ne 0022 ];then
+        echo -e "\033[1;31m umask不等于0022 \033[0m";
+fi
+    echo -e "\033[1;32m*******************************************************以下是详细信息*******************************************************\033[0m"
+}
 function version(){
     echo ""
     echo ""
@@ -33,7 +49,6 @@ function sys_info(){
 	echo ""
     echo "详细配置见下方内容"
 }
-
 function diskrwtest(){
     echo -e "\033[1;32m*******************************************************数据盘性能检测*******************************************************\033[0m"
     for i in $read_test;
@@ -56,7 +71,6 @@ function diskrwtest(){
             dd if=/dev/zero of=/dev/$i oflag=direct,nonblock bs=128MB count=10 2>> $RESULTFILE
     done
 }
-
 function getCpuStatus(){
     echo -e "\033[1;32m*******************************************************CPU检查*******************************************************\033[0m"
     Physical_CPUs=$(grep "physical id" /proc/cpuinfo| sort | uniq | wc -l)
@@ -438,23 +452,33 @@ function jdk_check(){
 function getrpmlist(){
 	#检查rpm包
     echo -e "\033[1;32m*******************************************************rpm包检查*******************************************************\033[0m"
-    rpm -qa | sort
+    rpm -qa | grep -iE 'python|glibc'|sort
 }
 function checkNoticeServer(){
-	#进行邮件服务器检查
-	echo -e "\033[1;32m*******************************************************Eguan邮件服务器检查*******************************************************\033[0m"
-    result=""
-    nc -zv smtp.analysys.com.cn 25 >/tmp/che.log 2>&1
-    if [ `cat /tmp/che.log | grep -E "failed|timed out" | wc -l` -le 1 ];then
-	result="True"
-    else
-	result="False"
-    fi
+        #进行邮件服务器检查
+        echo -e "\033[1;32m*******************************************************Eguan邮件服务器检查*******************************************************\033[0m"
     echo "tips：默认检测易观邮箱服务器！"
-    echo "邮件是否可以发出:$result"
-
+    
+    for i in {25,465,587};
+    do
+    result=""
+    nc -zv smtp.analysys.com.cn $i >/tmp/che.log 2>&1
+    if [ `cat /tmp/che.log | grep -E "failed|timed out" | wc -l` -le 1 ];then
+        result="True"
+    else
+        result="False"
+    fi
+    if [ $i = 25 ];then
+        #echo "tips：默认检测易观邮箱服务器！"
+        echo "邮件是否可以发出(port:$i):$result"
+    else
+        #echo "tips：默认检测易观邮箱服务器！"
+        echo "邮件是否可以发出(SSL方式,port:$i):$result"
+    fi
+    done
 }
 function check(){
+    error_info
     version
     getSystemStatus
     getCpuStatus
