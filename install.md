@@ -1,6 +1,6 @@
 # 简述
   为了便于argo 社区用户更好的体验 ，简化安装步骤。
-## 部署前环境配置检测
+## 安装前服务器检测
      下载工具包 wget http://ark_install.analysys.cn/upgrade/go.tar.gz
      解压 tar zxf go.tar.gz 
      修改配置文件 cp go/files/sctxx/sys.conf /tmp  编辑配置文件  vim /tmp/sys.conf
@@ -16,5 +16,7 @@
     安装
     
 ## 开始使用
-   license
+   打开web界面会提示输入license
+## 后续升级
+    参见 upgrede
      
