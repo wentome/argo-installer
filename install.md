@@ -1,7 +1,7 @@
 # 简述
-&ensp;&ensp;**为了便于 argo 社区用户更好的体验, 简化了安装步骤， 但是切记要按照要求准备服务器!**
+&ensp;&ensp;&ensp;&ensp;**为了便于 argo 社区用户更好的体验, 简化了安装步骤， 但是切记要按照要求准备服务器!**
 ## 安装前服务器检测和配置
-1. 服务器最低配置要求. 系统：centos7.4|6 , CPU:4核8线, 内存:16g, 系统盘大于200G, 最少1块大于500G数据盘data1
+1. 服务器最低配置要求. 系统：centos7.4|6 , CPU:4核8线, 内存:16g, 系统盘大于200G, 最少1块大于500G数据盘 data1
 1. 使用 root 或者具有 sudo 权限的用户操作
 1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
 1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar zxf go.tar.gz` 
@@ -24,7 +24,7 @@
 1. 安装`$ sudo sh standalone_offline_installer.sh`  为避免安装过程断网导致安装失败, 建议使用 screen 命令
     
 ## 开始使用
-   打开web界面会提示输入license
+&ensp;&ensp;打开 web 界面会提示输入 license 
 ## 后续升级
-   参见 upgrede
+&ensp;&ensp;参见 upgrede
      
