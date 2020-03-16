@@ -1,5 +1,5 @@
 # 简述
-  为了便于argo 社区用户更好的体验 ，简化安装步骤。
+  为了便于argo 社区用户更好的体验, 简化安装安装步骤. 但是切记按照不是要求准备服务器!
 ## 安装前服务器检测
 1. 使用 root 或者具有 sudo 权限的用户操作
 1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
