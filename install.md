@@ -13,13 +13,13 @@
 1. 构建 argo 用户 `$ bin/python3 tools/pre.py -u argo -c /tmp/sys.conf`
 1. 备份日志 `$ mv /tmp/pre.log /tmp/pre.log.install`
 1. 切换到argo用户 `$ su - argo`
-1. 检测 `$ python3 go/tools/pre.py -x -c /tmp/sys.conf` 结果为 pass 方可继续操作
-1. 如有疑问, 截图检测结果到社区群，咨询技术小伙伴
+1. 挂载数据盘 /dev/sdb -> /data1 (默认配置如有特殊可修改 /tmp/sys.conf) `$ python3 go/tools/pre.py -md -c /tmp/sys.conf`
+1. 检测 `$ python3 go/tools/pre.py -x -c /tmp/sys.conf` 结果为 pass 方可继续操作 如有疑问, 截图检测结果到社区群，咨询技术小伙伴
+1. 环境检测均通过后初始化环境`$ python3 go/tools/pre.py -init -c /tmp/sys.conf`
      
 ## 开始安装
 1. 下载安装包`$ http://ark_install.analysys.cn/argo.4.6.tar.gz`  
-1. 创建安装目录`$ sudo mkdir /opt/soft` 
-1. 解压`$ sudo tar zxf -C /opt/soft` 
+1. 解压`$ sudo tar zxf argo.4.6.tar.gz -C /opt/`  解压对应的安装包 
 1. 进入安装目录 `$ cd /opt/soft`
 1. 安装`$ sudo sh standalone_offline_installer.sh` 
     
