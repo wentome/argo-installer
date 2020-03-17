@@ -6,7 +6,7 @@
 1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
 1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar zxf go.tar.gz` 
 1. 拷贝配置文件模板到默认目录  `$ cp go/files/scatter/sys.conf /tmp` (如果使用其他路径在后续的命令中用-c /path/sys.conf 参数指定)
-1. 修改配置参数 (IP:内网IP | PORT:ssh 端口 | USER:ROOT | PASSWD:root 用户的密码) `$ vim /tmp/sys.conf`
+1. 修改配置参数 (IP:内网IP | PORT:ssh 端口 | USER:root | PASSWD:root 用户的密码) `$ vim /tmp/sys.conf`
 1. 进入工作目录 `$ cd go`
 1. 测试ssh连接 `$ bin/python3 tools/pre.py -t`  结果为 pass 方可继续操作
 1. 修改主机名和hosts `$ bin/python3 tools/pre.py -s` 主机名会被改成ark1 
@@ -25,6 +25,7 @@
 1. 安装`$ sudo sh standalone_offline_installer.sh`  为避免安装过程断网导致安装失败, 建议使用 screen 命令
     
 ## 开始使用
+&ensp;&ensp;在这里获取license：https://ark.analysys.cn/license.html
 &ensp;&ensp;打开 web 界面会提示输入 license 
 ## 后续升级
 &ensp;&ensp;参见 upgrade
