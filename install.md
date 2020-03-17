@@ -5,7 +5,7 @@
 1. 使用 root 或者具有 sudo 权限的用户操作
 1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
 1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar zxf go.tar.gz` 
-1. 拷贝配置文件模板到默认目录  `$ cp go/files/scatter/sys.conf /tmp/` (如果使用其他路径在后续的命令中用-c /path/sys.conf 参数指定)
+1. 拷贝配置文件模板到默认目录  `$ cp go/files/scatter/sys.conf /tmp` (如果使用其他路径在后续的命令中用-c /path/sys.conf 参数指定)
 1. 修改配置参数 (IP:内网IP | PORT:ssh 端口 | USER:ROOT | PASSWD:root 用户的密码) `$ vim /tmp/sys.conf`
 1. 进如工作目录 `$ cd go`
 1. 测试ssh连接 `$ bin/python3 tools/pre.py -t`  结果为 pass 方可继续操作
@@ -18,7 +18,7 @@
 1. 环境检测均通过后初始化环境`$ python3 go/tools/pre.py -init`
      
 ## 开始安装
-1. 下载安装包`$ http://ark_install.analysys.cn/argo.4.6.tar.gz`  
+1. 下载安装包`$ wget http://arkinstall.analysys.cn/argo.4.6.tar.gz`  
 1. 解压`$ sudo tar zxf argo.4.6.tar.gz`  解压对应的安装包 
 1. 复制安装文件 `$ sudo cp argo.4.6/* /opt/soft`  解压对应的安装包 
 1. 进入安装目录 `$ cd /opt/soft`
