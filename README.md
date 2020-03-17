@@ -15,8 +15,8 @@ Argo为私有化部署产品，需要工程师参与，所以请业务同学将�
 # 安装及升级说明
 
 **安装**
-- [4.6安装](https://github.com/analysys/argo-installer/blob/master/install.md)（最新版：[4.6](http://arkinstall.analysys.cn/) ）
-- [4.5.1安装](INSTALL_SCRIPT.md)
+- [4.6安装方法](https://github.com/analysys/argo-installer/blob/master/install.md)（最新版：[4.6](http://arkinstall.analysys.cn/) ）
+- [其他版本安装](INSTALL_SCRIPT.md) 
 
 **升级**
 
