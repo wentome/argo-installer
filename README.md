@@ -1,15 +1,21 @@
-# 易观 Argo
+# 易观方舟Argo
 
 ![](imgs/pre-defined_dashboard.png)
 
-我们最初推出 Argo 是希望有一种全新的产品体验——让大家在使用到商业级产品能力的时候尽量不用去考虑成本。虽然现在难以做到完全开源，但我们也会努力将商业级的产品通过社区带给更多人。
+我们最初推出 Argo 是希望有一种全新的产品体验——让大家在使用到商业级产品能力的时候尽量不用去考虑成本。能够免费、高效地搭建智能用户运营平台，分析用户行为特点、制定用户分群并完成用户触达。虽然现在难以做到完全开源，但我们也会努力将商业级的产品通过社区带给更多人。
 
-我们觉得数据驱动是一种基础能力，大家都应该更自由地使用。数据驱动在未来会有更广阔的应用场景，而目前在企业中的使用率还达不到普及。从长远来看，降低使用门槛的做法对提升普及率有积极意义。
+我们觉得数据驱动是一种基础能力，大家都应该更自由地使用。数据驱动在未来会有更广阔的应用场景，而目前在企业中的使用率还达不到普及。从长远来看，降低使用门槛的做法对提升普及率有积极意义。也希望能在很快的未来，我们会和更多的开发者和社区爱好者一起，带动更多的朋友一起来做这件有意义的事情。
 
-也希望能在很快的未来，我们会和更多的开发者和社区爱好者一起，带动更多的朋友一起来做这件有意义的事情。
+Argo为私有化部署产品，需要工程师参与。所以请业务同学将地址同步给工程师，助你快速上手！
 
-最新版：[4.5.1](http://arkinstall.analysys.cn/) 
- * [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
+# 安装及升级说明
+
+**安装**
+- [快速安装](INSTALL_SCRIPT.md)（最新版：[4.5.1](http://arkinstall.analysys.cn/) ）
+
+**升级**
+
+- [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
 
 **What's New in 4.5**
 
@@ -33,7 +39,17 @@
  
 更多更新内容在[这里](https://docs.analysys.cn/ark/release-notes)查看
 
-## 为什么你需要 Argo ？
+#### License 
+
+> D4833F05A784C925D17684A8A2114EFB8E1A431CCE5929B85F097A783BED24F247D07B1DD63414348BE4FB516DB18FD65A4167FCAE311022E71A223AE672ABEF10F721D949A6FECEA7272B1C3D0900FF33366F7AA30E5546818FD2521530F266287C891F802C5657C8742787919ACE2F7376D5D781C57509E5CBE4D12CCF254D46F32A84D0E887DA4DA5BF91F430F251
+
+安装完成需如输入上面的license激活，该license专为Argo用户提供。
+
+
+License 有效期为1个自然年，每年12月更新次年 License。用企业管理员账号登录平台，在企业概览页面的右上角点击“续期/扩容”，填入上面的 License 即可完成续期。
+
+
+# 为什么你需要 Argo ？
 
 目前能做用户行为数据收集和分析的产品很多，有的例如 Google Analytics、百度统计和友盟能基础数据统计和分析（当然 GA 能做更多事情只不过也需要更多的学习成本）。使用这类工具可以满足你了解产品数据表现的基本需求，可当你需要数据做更多事情时他们就无法满足了。常见的场景有：
 
@@ -49,11 +65,13 @@
 
 来自用户的数据是未来企业日常工作中会用到的基本元素，我们希望能帮助团队做到“**早收集，自己存，存明细，分析快，导出易**”。我们会致力于提供更开放、更低门槛、更易用的数据工具，希望能通过我们的努力让这种数据的使用能力成为团队初创伊始就具备的能力。如果你现在还在考虑用户行为相关的数据产品，可以先花几分钟部署 Argo 试一下。相信会给你的决策提供帮助。
 
-## 他们已经在用
+
+# 他们已经在用
 
 ![](imgs/customers.png)
 
-## Argo 提供的功能
+
+# Argo 提供的功能
 
 ### 分析类
 
@@ -81,12 +99,8 @@
 * [发送短息](https://docs.analysys.cn/ark/features/operation/sms)（腾讯云短信、云集、领驭、乐信通）
 * [广告活动管理](https://docs.analysys.cn/ark/features/operation/utm)（UTM、APP扫码）
 
-# 安装说明
 
-- [通过脚本安装](INSTALL_SCRIPT.md)（推荐！）
-- [通过 Docker 安装](INSTALL_DOCKER.md) **NOTE**: Docker 版仅用于体验，不支持更新，不应用于生产环境。
-
-## 常见问题
+# 常见问题
 
 部署中遇到问题可以看这里：
 
@@ -99,10 +113,23 @@
 - [功能介绍](https://ark.analysys.cn/docs/function.html)
 - [其它问题](https://ark.analysys.cn/docs/faq.html)
 
-## 提交反馈
+
+# 提交反馈
 
 * 提交[新功能需求](https://github.com/analysys/argo-installer/issues/new)
 * 为[热门需求](https://github.com/analysys/argo-installer/issues?q=is%3Aopen+is%3Aissue+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc)投票
+
+
+# 社区支持
+
+希望我们的努力可以解放更多人的生产力，祝你使用顺利！
+
+官方论坛：
+https://geek.analysys.cn
+
+微信群交流：
+如有问题，请优先根据文档和论坛问答自研，若想进群交流请发送邮件至zhunan@analysys.com.cn ，邮件标题中注明你的微信号和进群目的。
+
 
 # 热切地寻找志同道合的小伙伴
 
@@ -120,8 +147,5 @@
 
 期待与你共建用户行为分析以及基于用户行为驱动更多业务的社区！
 
-# 社群
 
-希望我们的努力可以解放更多人的生产力，祝你使用顺利！
 
-官方论坛 https://geek.analysys.cn
