@@ -27,5 +27,5 @@
 ## 开始使用
 &ensp;&ensp;打开 web 界面会提示输入 license 
 ## 后续升级
-&ensp;&ensp;参见 upgrede
+&ensp;&ensp;参见 upgrade
      
