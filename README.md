@@ -98,6 +98,9 @@ Argo为私有化部署产品，需要工程师参与，所以请业务同学将�
 
 - [部署问题](https://github.com/analysys/argo-installer/issues?utf8=✓&q=label%3Adocs+)
 
+论坛里也沉淀了一些问答，可以直接在这提问与回答，我们会及时回复：
+https://ark.analysys.cn/forum/
+
 完成了后续安装步骤就正式进入了易观方舟Argo的探索之旅，下面是一些快速开始的文档：
 
 - [接入前准备](https://ark.analysys.cn/docs/integration-prepare.html)
@@ -105,36 +108,6 @@ Argo为私有化部署产品，需要工程师参与，所以请业务同学将�
 - [功能介绍](https://ark.analysys.cn/docs/function.html)
 - [其它问题](https://ark.analysys.cn/docs/faq.html)
 
-
-# 提交反馈
-
-* 提交[新功能需求](https://github.com/analysys/argo-installer/issues/new)
-* 为[热门需求](https://github.com/analysys/argo-installer/issues?q=is%3Aopen+is%3Aissue+label%3A%22feature+request%22+sort%3Areactions-%2B1-desc)投票
-
-
-# 社区支持
-
-希望我们的努力可以解放更多人的生产力，祝你使用顺利！
-
-官方论坛：
-https://ark.analysys.cn/forum/
-
-欢迎在论坛里提问与回答，我们会第一时间回复。
-
-
-# 热切地寻找志同道合的小伙伴
-
-正如你所见，我们希望通过易观方舟Argo 能让更多的早期团队也具备商业级用户行为驱动的能力。我们通过社区的方式来运营此版本，就是希望 Argo 能是社会的，而不是私有的。如果你认同我们的做法，并且也想贡献一份力量，无论你是否在易观，都有可以成为 Argo 社区的一员。
-
-我们现在急需以下小伙伴：
-1. 社群运营（社区贡献者或易观工作机会）
-2. 大前端架构师（易观工作机会）
-
-我们长期欢迎下面的小伙伴勾搭：
-1. 产品经理（易观工作机会）
-2. 产品设计师（易观工作机会）
-
-有想法的小伙伴可以给 zhunan@analysys.com.cn 发送邮件，并注明来意。
 
 期待与你共建用户行为分析以及基于用户行为驱动更多业务的社区！
 
