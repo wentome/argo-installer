@@ -26,7 +26,11 @@
     
 ## 开始使用
 &ensp;&ensp;在这里获取license：https://ark.analysys.cn/license.html
-&ensp;&ensp;打开 web 界面会提示输入 license 
+部署完成后，登录平台管理员帐号，根据页面引导，输入 License 激活系统，进入项目管理页面，即可开始创建创建项目。
+在集成SDK/可视化埋点后可开始利用方舟产品能力创建分析模型，开启分析之旅。
+
+更多关于产品安装、使用的说明可前往 https://docs.analysys.cn/ark/ 查看。
+
 ## 后续升级
 &ensp;&ensp;参见 upgrade
      
