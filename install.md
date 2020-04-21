@@ -1,5 +1,6 @@
 # 简述
-&ensp;&ensp;&ensp;&ensp;**为了便于 argo 社区用户更好的体验, 简化了安装步骤， 但是切记要按照要求准备服务器!**
+&ensp;&ensp;&ensp;&ensp;**为了便于Argo社区用户更好的体验, 本版简化了安装步骤，但切记要按照要求准备配置环境，否则由配置引发的问题我们不予支持哦!**
+
 ## 安装前服务器检测和配置
 1. 服务器最低配置要求. 系统：centos7.4|6|7 , CPU:4核8线, 支持 avx 指令集, 内存:16g, 系统盘大于200G, 最少1块大于500G数据盘 data1 
 1. 使用 root 或者具有 sudo 权限的用户操作
@@ -26,8 +27,16 @@
 1. 安装`$ sudo sh standalone_offline_installer.sh`  为避免安装过程断网导致安装失败, 建议使用 screen 命令
     
 ## 开始使用
-&ensp;&ensp;在这里获取license：https://ark.analysys.cn/license.html
-&ensp;&ensp;打开 web 界面会提示输入 license 
+1. 在这里获取license：https://ark.analysys.cn/license.html
+1. 部署完成后，登录平台管理员帐号（admin 111111），根据页面引导，输入 License 激活系统，进入项目管理页面，即可开始创建项目。
+1. 在集成SDK/可视化埋点后可开始利用方舟产品能力创建分析模型，开启分析之旅。
+
+在安装使用过程中如有问题，请优先从已有文档中查找答案：
+1. 官方产品文档：https://docs.analysys.cn/ark/ 
+2. 论坛：https://ark.analysys.cn/forum/
+
+当自研无法解决问题，可以通过我们的顾问进入Argo微信群提问，提问时请遵守社区规范，群内小伙伴都是自发回答。
+
 ## 后续升级
-&ensp;&ensp;参见 upgrade
+参见首页 upgrade 文档
      
