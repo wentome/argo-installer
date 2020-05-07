@@ -27,7 +27,7 @@
 1. 安装`$ sudo sh standalone_offline_installer.sh`  为避免安装过程断网导致安装失败, 建议使用 screen 命令
     
 ## 开始使用
-1. 在这里获取license：https://ark.analysys.cn/license.html
+1. 在这里获取license（安装成功后方可获取）：https://ark.analysys.cn/license.html
 1. 部署完成后，登录平台管理员帐号（admin 111111），根据页面引导，输入 License 激活系统，进入项目管理页面，即可开始创建项目。
 1. 在集成SDK/可视化埋点后可开始利用方舟产品能力创建分析模型，开启分析之旅。
 
