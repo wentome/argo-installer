@@ -26,7 +26,7 @@
 1. 解压`$ tar zxf argo.4.6.tar.gz`  
 1. 复制安装文件 `$ sudo cp argo.4.6/* /opt/soft`
 1. 进入安装目录 `$ cd /opt/soft`
-1. 安装`$ sudo sh standalone_offline_installer.sh`  为避免安装过程断网导致安装失败, 建议使用screen命令，如遇到问题可先自行查看日志 /tmp/pre.log ，如有疑问可前往 https://ark.analysys.cn/forum/ 在论坛搜索或提问。
+1. 安装`$ sudo sh standalone_offline_installer.sh`  为避免安装过程断网导致安装失败, 建议使用screen命令，如遇到问题可先自行查看日志 /tmp/pre.log ，如有疑问可前往 https://ark.analysys.cn/forum/ 在论坛搜索或提问，如对安装文档有疑问、欢迎和我们共建更好用的文档 https://www.analysysdata.com/forum/topic/293
     
 ## 开始使用
 1. 在这里获取license（安装成功后方可获取）：https://ark.analysys.cn/license.html
