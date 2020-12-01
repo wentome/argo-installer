@@ -17,7 +17,7 @@
 1. 切换到 argo 用户 `$ su - argo`
 1. 挂载数据盘 /dev/sdb -> /data1 (默认配置如有特殊可修改 /tmp/sys.conf) `$ epython3 go/tools/pre.py -md`
 1. 检测 `$ epython3 go/tools/pre.py -x` 结果均为 pass 方可继续操作，
-# 以上过程中如遇到问题可先自行查看日志 /tmp/pre.log 
+## 以上过程中如遇到问题可先自行查看日志 /tmp/pre.log 
      
 ## 开始安装
 1. 切换到 argo 用户 `$ su - argo`
