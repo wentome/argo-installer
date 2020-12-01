@@ -3,7 +3,7 @@
 
 感谢社区小伙伴录制的Argo部署视频，希望对大家的安装有帮助 https://ark.analysys.cn/video-detail.html?id=93
 
-## 安装前服务器检测和配置
+# 安装前服务器检测和配置
 1. 服务器最低配置要求. 系统：centos7.4|6|7 , CPU:4核8线, 支持 avx 指令集, 内存:16g, 系统盘大于200G, 数据盘 data1大于500G ,且不要使用磁盘分区
 1. 使用 root 用户操作（在/root目录操作）
 1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
@@ -17,15 +17,15 @@
 1. 切换到 argo 用户 `$ su - argo`
 1. 挂载数据盘 /dev/sdb -> /data1 (默认配置如有特殊可修改 /tmp/sys.conf) `$ epython3 go/tools/pre.py -md`
 1. 检测 `$ epython3 go/tools/pre.py -x` 结果均为 pass 方可继续操作，
-## 以上过程中如遇到问题可先自行查看日志 /tmp/pre.log 
+#### 以上过程中如遇到问题可先自行查看日志 /tmp/pre.log 
      
-## 开始安装
+# 开始安装
 1. 切换到 argo 用户 `$ su - argo`
 1. 下载安装包`$ wget http://arkinstall.analysys.cn/argo.5.1.0316.tar.gz`  
 1. 开始安装`$ upgrader -install -l argo.5.1.0316.tar.gz`
-# 安装过程中如遇到问题可先自行查看日志 /tmp/upgrader.log 或者可前往 https://www.analysysdata.com/forum/index 在论坛搜索或提问，如对安装文档有疑问、欢迎和我们共建更好用的文档 https://www.analysysdata.com/forum/topic/293
+#### 安装过程中如遇到问题可先自行查看日志 /tmp/upgrader.log 或者可前往 https://www.analysysdata.com/forum/index 在论坛搜索或提问，如对安装文档有疑问、欢迎和我们共建更好用的文档 https://www.analysysdata.com/forum/topic/293
     
-## 开始使用
+# 开始使用
 1. 在这里获取license（安装成功后方可获取）：https://ark.analysys.cn/license.html
 1. 部署完成后，登录平台管理员帐号（admin 111111），根据页面引导，输入 License 激活系统，进入项目管理页面，即可开始创建项目。
 1. 在集成SDK/可视化埋点后可开始利用方舟产品能力创建分析模型，开启分析之旅。
@@ -36,5 +36,5 @@
 
 当自研无法解决问题，可以通过我们的顾问进入Argo微信群提问，提问时请遵守社区规范，群内小伙伴都是自发回答。
 
-## 后续升级
+# 后续升级
 参见首页 upgrade 文档
