@@ -3,7 +3,7 @@
 ![](imgs/pre-defined_dashboard.png)
 
 
-易观方舟Argo是易观方舟的免费版，是免费的智能用户运营平台，集用户行为分析、用户画像、用户运营为一体。
+易观方舟Argo是易观方舟智能分析产品的免费版，集用户行为数据采集、12大模型分析、用户分层、用户运营模块为一体。
 
 我们最初推出 Argo 是希望帮助有数据分析需求和动手能力的初创团队，在使用到商业级产品能力的时候不用去考虑成本。虽然现在难以做到完全开源，但我们也会努力将商业级的产品通过社区带给更多人。
 
@@ -12,32 +12,15 @@
 Argo为私有化部署产品，需要工程师参与，所以请业务同学将地址同步给工程师，助你快速上手！
 
 
-# 安装及升级说明
+# 安装及升级文档
 
-**安装**
+**安装**（安装方法内包含使用说明）
 - [4.6安装方法](https://github.com/analysys/argo-installer/blob/master/install.md)（最新版：[4.6](http://arkinstall.analysys.cn/) ）
 
 **升级**
 
 - [升级方法](https://github.com/analysys/argo-installer/blob/master/upgrade.md)
-
-**What's New in 4.6**
- 
- 改进
- 
- - 大幅优化查询性能
- - 消息通知中极光通道支持自己选择生产和测试环境，以满足在极光平台中配置了特定环境用于测试的场景
- - 用户分群中条件为“等于”、“不等于”时支持批量输入值，满足譬如快速选择已知的一批用户ID
- 
- 
-更多更新内容在[这里](https://docs.analysys.cn/ark/release-notes)查看
-
-#### 获取 License 
-
-安装完成需输入license激活，需要前往 https://ark.analysys.cn/license.html 获取license。
-
-
-关于License的更多问题可前往https://docs.analysys.cn/ark/faq/license  
+- 目前仅支持小版本升级，如4.6.1至4.6.X
 
 
 # 为什么你需要 Argo ？
@@ -55,11 +38,6 @@ Argo为私有化部署产品，需要工程师参与，所以请业务同学将�
 以上场景虽然国内也有其它厂商能满足，但收费不菲且开放性不够。
 
 来自用户的数据是未来企业日常工作中会用到的基本元素，我们希望能帮助团队做到“**早收集，自己存，存明细，分析快，导出易**”。我们会致力于提供更开放、更低门槛、更易用的数据工具，希望能通过我们的努力让这种数据的使用能力成为团队初创伊始就具备的能力。如果你现在还在考虑用户行为相关的数据产品，可以先花几分钟部署 Argo 试一下。相信会给你的决策提供帮助。
-
-
-# 他们已经在用
-
-![](imgs/customers.png)
 
 
 # Argo 提供的功能
@@ -93,19 +71,12 @@ Argo为私有化部署产品，需要工程师参与，所以请业务同学将�
 
 # 常见问题
 
-部署中遇到问题可以看这里：
-
-- [部署问题](https://github.com/analysys/argo-installer/issues?utf8=✓&q=label%3Adocs+)
-
-论坛里也沉淀了一些问答，可以直接在这提问与回答，我们会及时回复：
-https://ark.analysys.cn/forum/
-
-完成了后续安装步骤就正式进入了易观方舟Argo的探索之旅，下面是一些快速开始的文档：
+下面是一些快速开始的文档：
 
 - [接入前准备](https://ark.analysys.cn/docs/integration-prepare.html)
 - [SDK指南](https://ark.analysys.cn/docs/sdk.html)
 - [功能介绍](https://ark.analysys.cn/docs/function.html)
-- [其它问题](https://ark.analysys.cn/docs/faq.html)
+- 你也可以在论坛看看前人经验，进行互助问答 https://www.analysysdata.com/forum/ 
 
 
 期待与你共建用户行为分析以及基于用户行为驱动更多业务的社区！
