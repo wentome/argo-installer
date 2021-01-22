@@ -29,7 +29,7 @@
 1. 安装`$ sudo sh standalone_offline_installer.sh`  为避免安装过程断网导致安装失败, 建议使用screen命令，如遇到问题可先自行查看日志 /tmp/pre.log ，如有疑问可前往 https://ark.analysys.cn/forum/ 在论坛搜索或提问，如对安装文档有疑问、欢迎和我们共建更好用的文档 https://www.analysysdata.com/forum/topic/293
     
 ## 开始使用
-1. 部署完成后，登录平台管理员帐号（admin 111111），根据页面引导，前往相应位置输入 License 激活系统，进入项目管理页面，即可开始创建项目。
+1. 部署完成后，登录平台管理员帐号（admin 111111），根据页面引导，前往相应位置获取并输入 License 以激活系统，随后进入项目管理页面，即可开始创建项目。
 1. 在集成SDK、完成埋点后可开始利用方舟产品能力创建分析模型，开启分析之旅。
 
 ## 升级
