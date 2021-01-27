@@ -1,7 +1,9 @@
 # 简述
-&ensp;&ensp;&ensp;&ensp;**为了便于Argo社区用户更好的体验, 本版简化了安装步骤，但切记要按照要求准备配置环境，要格外注意root与Argo用户的切换。另外，Argo不支持系统使用中文语言，需要用英文 LANG=en_US.UTF-8   否则会在部署或运行种出现不兼容问题**
-
-感谢社区小伙伴录制的Argo部署视频，希望对大家的安装有帮助 https://ark.analysys.cn/video-detail.html?id=93
+&ensp;&ensp;&ensp;&ensp;**为了便于Argo社区用户更好的体验, 本版简化了安装步骤，但切记要按照要求准备配置环境。
+# 须知
+1. 要格外注意root与Argo用户的切换；
+1. Argo不支持系统使用中文语言，需要用英文 LANG=en_US.UTF-8 ，否则会在部署或运行中出现不兼容问题。一些同学的电脑 ssh 的工具系统语言是中文, 例如 MAC 自带的ssh工具是中文时候,连接服务器会把当前连接 session 系统语言修改成中文，导致创建 argo用户异常，做法是登录上服务器后执行 echo $LANG ，如果发现是（zh_CN.UTF-8）中文，则执行 export LANG==en_US.UTF-8  ，再使用  echo $LANG 是不是改为了（en_US.UTF-8 ）英文；
+1. 感谢社区小伙伴录制的Argo部署视频，希望对大家的安装有帮助 https://ark.analysys.cn/video-detail.html?id=93
 
 ## 安装前服务器检测和配置
 1. 服务器最低配置要求. 系统：centos7.4|6|7 , CPU:4核8线, 支持 avx 指令集, 内存:16g, 系统盘大于200G, 数据盘 data1大于500G ,且不要使用磁盘分区
