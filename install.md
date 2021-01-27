@@ -16,7 +16,6 @@
 1. 测试ssh连接 `$ bin/python3 tools/pre.py -t`  结果为 pass 方可继续操作
 1. 修改主机名和hosts `$ bin/python3 tools/pre.py -s` 主机名会被改成ark1 
 1. 构建 argo 用户 `$ bin/python3 tools/pre.py -u argo`
-1. 备份日志 `$ mv /tmp/pre.log /tmp/pre.log.install`
 1. 切换到 argo 用户 `$ su - argo`
 1. 挂载数据盘 /dev/sdb -> /data1 (默认配置如有特殊可修改 /tmp/sys.conf) `$ python3 go/tools/pre.py -md`
 1. 检测 `$ python3 go/tools/pre.py -x` 结果均为 pass 方可继续操作 如有疑问, 截图检测结果到社区群，咨询技术小伙伴
