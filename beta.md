@@ -23,7 +23,7 @@
 1. 切换到 argo 用户 `$ su - argo`
 1. 下载安装包`$ wget http://arkinstall.analysys.cn/argo.5.1.0316.tar.gz`  
 1. 开始安装`$ upgrader -install -l argo.5.1.0316.tar.gz`
-#### 安装过程中如遇到问题可先自行查看日志 /tmp/upgrader.log 或者可前往 https://www.analysysdata.com/forum/index 在论坛搜索或提问，如对安装文档有疑问、欢迎和我们共建更好用的文档 https://www.analysysdata.com/forum/topic/293
+#### 安装过程中如遇到问题可先自行查看日志 /tmp/upgrade.log 或者可前往 https://www.analysysdata.com/forum/index 在论坛搜索或提问，如对安装文档有疑问、欢迎和我们共建更好用的文档 https://www.analysysdata.com/forum/topic/293
     
 # 开始使用
 1. 在这里获取license（安装成功后方可获取）：https://ark.analysys.cn/license.html
