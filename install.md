@@ -6,7 +6,7 @@
 1. 感谢社区小伙伴录制的Argo部署视频，希望对大家的安装有帮助 https://ark.analysys.cn/video-detail.html?id=93
 
 ## 安装前服务器检测和配置
-1. 服务器最低配置要求. 系统：centos7.4|6|7 , CPU:4核8线, 支持 avx 指令集, 内存:16g, 系统盘大于200G, 数据盘 data1大于500G ,且不要使用磁盘分区
+1. 服务器最低配置要求. 一台纯净的服务器，系统：centos7.4|6|7 , CPU:4核8线, 支持 avx 指令集, 内存:16g, 系统盘大于200G, 数据盘 data1大于500G ,且不要使用磁盘分区
 1. 使用 root 用户操作（在/root目录操作）
 1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
 1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar zxf go.tar.gz` 
