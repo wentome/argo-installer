@@ -40,5 +40,3 @@
 在安装使用过程中如有问题，请优先从已有文档中查找答案：
 1. 官方产品文档：https://docs.analysys.cn/ark/ 
 2. 论坛：https://www.analysysdata.com/forum/
-
-当自研无法解决问题，可以邮件至zhunan@analysys.com.cn，标题为“公司名称+职位+姓名+遇到问题+入群申请”进入Argo微信群提问，提问时请遵守社区规范，群内小伙伴都是自发回答。
